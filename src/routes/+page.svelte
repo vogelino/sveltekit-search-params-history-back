@@ -16,8 +16,12 @@
 <div class="flex h-screen w-screen flex-col items-center justify-center gap-8 bg-slate-400 p-6">
 	<form
 		on:submit|preventDefault={() => {}}
-		class="grid grid-cols-2 gap-4 rounded-lg bg-white p-6 shadow-md"
+		class="grid max-w-96 grid-cols-2 gap-4 rounded-lg bg-white p-6 shadow-md"
 	>
+		<p class="col-span-2">
+			Change the values in the form and then use the back/forth button of the browser history to see
+			the changes reflected.
+		</p>
 		<label for="query">Query</label>
 		<input
 			type="text"
